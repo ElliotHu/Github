@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jan 12 14:40:20 2017
+
+@author: Administrator
+"""
+
+def recursion(n):
+    if n == 1:
+        return 1
+    else:
+        return n * recursion(n-1)
+number = int(input('请输入一个正整数：'))
+result = recursion(number)
+print('%d 的阶乘是：%d' % (number,result))
